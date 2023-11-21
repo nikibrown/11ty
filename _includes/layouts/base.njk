@@ -1,23 +1,25 @@
+---
+title: 🍔 What Should We Eat?
+---
 
 <!doctype html>
 <html>
 <head>
-     <title>🍔 What Should We Eat?</title>
+     <title>{{ title }}</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>🍔 What Should We Eat?</h1>
+            <h1>{{ title }}</h1>
             <p>A recipe website built with 11ty</p>
         </div>
        
     </header>
     <main>
         <div class="container">
-            
-<h1>🍔 What Should We Eat?</h1>
+            {{ content | safe }}
         </div>
     </main>
 
