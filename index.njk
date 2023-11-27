@@ -1,14 +1,14 @@
 ---
 layout: layouts/base.njk
 eleventyImport:
-  collections: ["post"]
+  collections: ["recipie"]
 ---
 
 <h2>A list of stuff to eat</h2>
 
 <ul>
-{%- for post in collections.post -%}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{%- for recipie in collections.recipie -%}
+  <li><a href="{{ recipie.url }}">{{ recipie.data.title }}</a></li>
 {%- endfor -%}
 
 
