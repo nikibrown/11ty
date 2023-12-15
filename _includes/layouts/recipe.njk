@@ -1,25 +1,27 @@
+---
+title: 🍔 What Should We Eat?
+---
 
 <!doctype html>
 <html>
 <head>
-     <title>🍔 What Should We Eat?</title>
+     <title>{{ title }}</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>🍔 What Should We Eat?</h1>
+            <h1>{{ title }}</h1>
             <p>A recipe website built with 11ty</p>
         </div>
        
     </header>
     <main>
         <div class="container">
-            
-<h2>A list of stuff to eat</h2>
+            {{ content | safe }}
 
-<ul><li><a href="/recipes/butternut-squash-kale-gnocchi-skillet/">Butternut Squash, Chicken Meatballs, and Kale Gnocchi Skillet</a></li></ul>
+            <p><a href="/">&laquo; Back to Homepage</a></p>
         </div>
     </main>
 
