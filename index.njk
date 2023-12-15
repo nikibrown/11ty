@@ -1,16 +1,14 @@
 ---
 layout: layouts/base.njk
 eleventyImport:
-  collections: ["recipe"]
+collections: ["recipe"]
 title: 🍔 What Should We Eat?
 ---
 
 <h2>A list of stuff to eat</h2>
 
 <ul>
-{%- for recipe in collections.recipe -%}
-  <li><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></li>
-{%- endfor -%}
-
-
+	{%- for recipe in collections.recipe -%}
+		<li><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></li>
+	{%- endfor -%}
 </ul>

@@ -1,18 +1,8 @@
-<!doctype html>
-<html>
-<head>
-     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    {% include 'header.njk' %} 
-    <main>
-        <div class="container">
-            {{ content | safe }}
-        </div>
-    </main>
+{% include 'header.njk' %}
+<main>
+    <div class="container">
+        {{ content | safe }}
+    </div>
+</main>
 
-    {% include 'footer.njk' %} 
-    
-</body>
-</html>
+{% include 'footer.njk' %}
